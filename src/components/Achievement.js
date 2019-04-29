@@ -2,16 +2,19 @@ import React from 'react';
 import { Button, Card, Image } from 'semantic-ui-react';
 
 class Achievement extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
   render() {
     return (
       <Card>
         <Card.Content>
-          <Card.Header>Help Somebody In Need? </Card.Header>
-          <Card.Meta>14 points</Card.Meta>
-          <Image src="https://images.unsplash.com/photo-1509059852496-f3822ae057bf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=856&q=80 " />
-          <Card.Description>
-            It's pretty explanatory, did you help somebody who needed it?
-          </Card.Description>
+          <Card.Header>{this.props.header}</Card.Header>
+          <Card.Meta>{this.props.meta} points</Card.Meta>
+          <Image src={this.props.src} size="medium" />
+          <Card.Description>{this.props.description}</Card.Description>
         </Card.Content>
         <Card.Content extra>
           <Button.Group widths="2">

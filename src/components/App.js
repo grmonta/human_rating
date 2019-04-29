@@ -10,10 +10,17 @@ class App extends React.Component {
         <Container textAlign="center">
           <h2>Decent Human Caculator</h2>
           <br />
-          <p>Scroll down click add to all the things you did today</p>
+
+          <p>
+            Scroll down click add to all the things you did today. When you're
+            done, submit you're points and you'll see how well of a human you
+            were today.
+          </p>
           <br />
-          <p className="count">Goodie Points: 0 </p>
-          <SubmitButton />
+          <h4 className="count">Goodie Points: 0 </h4>
+
+          <SubmitButton className="" />
+
           <br />
           <Cards />
         </Container>
