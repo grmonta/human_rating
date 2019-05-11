@@ -12,15 +12,16 @@ class Achievement extends React.Component {
       <Card>
         <Card.Content>
           <Card.Header>{this.props.header}</Card.Header>
+
           <Card.Meta>{this.props.meta} points</Card.Meta>
-          <Image src={this.props.src} size="medium" />
+          <Image src={this.props.src} />
           <Card.Description>{this.props.description}</Card.Description>
         </Card.Content>
         <Card.Content extra>
           <Button.Group widths="2">
-            <Button color="purple">Add</Button>
+            <Button id="add-button">Add</Button>
             {/* add a disable state if add is not been done for this one */}
-            <Button color="grey">Remove</Button>
+            <Button id="remove-button">Remove</Button>
           </Button.Group>
         </Card.Content>
       </Card>

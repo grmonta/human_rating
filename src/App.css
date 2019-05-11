@@ -1,0 +1,36 @@
+body {
+  color: rgb(253, 214, 94);
+  background-image: url(images/rainbow.jpg);
+
+  margin-top: 5px;
+  font-family: 'Chivo', sans-serif;
+}
+
+#intro-container {
+  border-radius: 2%;
+  padding: 10px;
+  background-color: rgb(50, 58, 80);
+}
+
+#intro-container h1 {
+  text-decoration: underline;
+}
+
+#add-button {
+  background-color: rgb(44, 199, 165);
+  color: rgb(50, 58, 80);
+}
+
+#add-button:hover {
+  background-color: grey;
+  color: white;
+}
+#remove-button {
+  color: rgb(253, 214, 94);
+  background-color: rgb(50, 58, 80);
+}
+
+#remove-button:hover {
+  background-color: grey;
+  color: white;
+}
